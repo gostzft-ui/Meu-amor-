@@ -2,189 +2,149 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Meu Amor 🤍</title>
 
 <style>
 body{
   margin:0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(180deg,#5c2d91,#f7c1ff);
+  background: linear-gradient(180deg,#6a2c91,#f5d97a);
   color:#fff;
   text-align:center;
 }
 
 section{
-  padding:60px 20px;
+  padding:50px 20px;
 }
 
 h1,h2{
   margin-bottom:20px;
 }
 
-input{
-  padding:12px;
-  border-radius:20px;
-  border:none;
-  width:260px;
+p{
+  max-width:720px;
+  margin:15px auto;
+  line-height:1.6;
+  font-size:17px;
 }
 
-button{
-  padding:14px 30px;
-  border:none;
-  border-radius:30px;
-  background:#ff69b4;
-  color:#fff;
-  font-size:18px;
-  cursor:pointer;
-}
-
-iframe{
-  width:100%;
-  max-width:600px;
-  height:280px;
-  border-radius:15px;
-  margin:20px 0;
+.galeria{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
 }
 
 .galeria img{
-  width:220px;
+  width:200px;
   margin:10px;
   border-radius:15px;
 }
 
+iframe{
+  width:100%;
+  max-width:720px;
+  height:405px;
+  border:none;
+  border-radius:15px;
+  margin:25px auto;
+  display:block;
+}
+
+.spotify{
+  height:380px;
+}
+
 .contador{
   font-size:20px;
-  margin-top:15px;
+  margin-top:10px;
 }
-
-.texto{
-  max-width:700px;
-  margin:auto;
-  font-size:18px;
-  line-height:1.6;
-}
-
-#videos,#site{display:none;}
 </style>
 </head>
 
 <body>
 
-<!-- CHARADA -->
-<section id="login">
-<h1>✨ Charada do Amor ✨</h1>
-<p>
-Uma princesa seguiu as lanternas.<br>
-Outra acreditou nos sonhos mesmo na lama.<br>
-Escreva o nome dos dois filmes.
-</p>
-<input id="senha">
-<br><br>
-<button onclick="verificar()">Continuar</button>
-<p id="erro"></p>
+<section>
+  <h1>Meu Amor 🤍</h1>
+  <p>Esse site é só nosso. Um cantinho pra guardar tudo aquilo que faz o coração bater mais forte quando penso em você.</p>
 </section>
 
-<!-- VIDEOS -->
-<section id="videos">
-<h2>🎬 Clique nos vídeos para ouvir o som</h2>
+<section>
+  <h2>Lembra? 💭</h2>
 
-<iframe src="https://drive.google.com/file/d/13mOCitfPyqRIfsHZFY-A9Gquvmoq-_zH/preview" allow="autoplay"></iframe>
-
-<iframe src="https://drive.google.com/file/d/1TzQPp16LGfKlNWPq67hxZJW5MU7GDw78/preview" allow="autoplay"></iframe>
-
-<h2>Você é a minha Evangeline ✨</h2>
-<button onclick="entrar()">Continuar</button>
+  <p>Lembra quando demos o nosso primeiro beijo na esquina da pracinha com medo de alguém ver</p>
+  <p>Lembra quando ficamos deitadinhos no palco assistindo o filme que você nem gostou, mas assistiu comigo</p>
+  <p>Lembra quando saímos pela primeira vez? Os dois estavam com vergonha, só comemos rapidinho sem falar com o outro</p>
+  <p>Lembra quando falamos nosso primeiro Eu Te Amo, que sensação maravilhosa ouvir isso</p>
+  <p>Lembra da nossa "viagem" juntos para o sítio da sua família, foi perfeito ficar um final de semana inteiro ao seu lado</p>
+  <p>Lembra do nosso primeiro abraço? Foi perfeito meu amor, quero todos os dias os seus abraços</p>
 </section>
 
-<!-- SITE -->
-<section id="site">
+<section>
+  <h2>Nossos Momentos 📸</h2>
+  <div class="galeria">
+    <img src="fotos/foto1.jpg" alt="">
+    <img src="fotos/foto2.jpg" alt="">
+    <img src="fotos/foto3.jpg" alt="">
+    <img src="fotos/foto4.jpg" alt="">
+    <img src="fotos/foto5.jpg" alt="">
+    <img src="fotos/foto6.jpg" alt="">
+    <img src="fotos/foto7.jpg" alt="">
+    <img src="fotos/foto8.jpg" alt="">
+    <img src="fotos/foto9.jpg" alt="">
+    <img src="fotos/foto10.jpg" alt="">
+  </div>
+</section>
 
-<h1>Meu Amor 🤍</h1>
-<p>Esse site é só nosso. Um cantinho pra guardar tudo aquilo que faz o coração bater mais forte quando penso em você.</p>
+<section>
+  <h2>Nossos Vídeos 🎥</h2>
+  <p style="opacity:.85;">🔊 Clique no play para ouvir o som</p>
 
-<h2>Lembra?</h2>
-<div class="texto">
-<p>Lembra quando demos o nosso primeiro beijo na esquina da pracinha com medo de alguém ver</p>
-<p>Lembra quando ficamos deitadinhos no palco assistindo o filme que você nem gostou, mas assistiu comigo</p>
-<p>Lembra quando saímos pela primeira vez? Os dois estavam com vergonha, só comemos rapidinho sem falar um com o outro</p>
-<p>Lembra quando falamos nosso primeiro Eu Te Amo, que sensação maravilhosa ouvir isso</p>
-<p>Lembra da nossa "viagem" juntos para o sítio da sua família, foi perfeito ficar um final de semana inteiro ao seu lado</p>
-<p>Lembra do nosso primeiro abraço? Foi perfeito meu amor, quero todos os dias os seus abraços</p>
-<p>Quero todos os nossos lembras 🤍</p>
-</div>
+  <iframe src="https://drive.google.com/file/d/13mOCitfPyqRIfsHZFY-A9Gquvmoq-_zH/preview"></iframe>
+  <iframe src="https://drive.google.com/file/d/1TzQPp16LGfKlNWPq67hxZJW5MU7GDw78/preview"></iframe>
+  <iframe src="https://drive.google.com/file/d/19BV_-cYTHWNFt8JgX7Qus0Y2RI24qST2/preview"></iframe>
+</section>
 
-<h2>Nossos Momentos 📸</h2>
-<div class="galeria">
-<img src="fotos/foto1.jpg">
-<img src="fotos/foto2.jpg">
-<img src="fotos/foto3.jpg">
-<img src="fotos/foto4.jpg">
-<img src="fotos/foto5.jpg">
-<img src="fotos/foto6.jpg">
-<img src="fotos/foto7.jpg">
-<img src="fotos/foto8.jpg">
-<img src="fotos/foto9.jpg">
-<img src="fotos/foto10.jpg">
-</div>
+<section>
+  <h2>Nossa Trilha Sonora 🎶</h2>
+  <iframe 
+    class="spotify"
+    src="https://open.spotify.com/embed/playlist/0GKNsELBWY6QhXG5dWOUo7"
+    allow="autoplay; encrypted-media;">
+  </iframe>
+</section>
 
-<h2>Um Vídeo Nosso 💛</h2>
-<iframe src="https://drive.google.com/file/d/19BV_-cYTHWNFt8JgX7Qus0Y2RI24qST2/preview" allow="autoplay"></iframe>
+<section>
+  <p>
+    Meu amor, cada segundo ao seu lado é o melhor momento do meu dia.
+    Tem dias que eu quero ir pra casa, e minha casa é você.
+    Eu te amo 🤍
+  </p>
+</section>
 
-<h2>Nossa Trilha Sonora 🎶</h2>
-<iframe style="border-radius:12px"
-src="https://open.spotify.com/embed/playlist/0GKNsELBWY6QhXG5dWOUo7"
-width="80%" height="380"
-allow="autoplay; clipboard-write; encrypted-media;"></iframe>
-
-<h2>⏳ Tempo juntos</h2>
-<div class="contador" id="contador"></div>
-
-<div class="texto">
-<p>
-Meu amor, nosso primeiro Natal juntos. Passar datas importantes ao seu lado faz tudo ficar mais simples.
-Você me completa até nos detalhes que ninguém repara, como o jeito de levantar a sobrancelha.
-Cada momento com você é especial, até os mais simples viram memória boa.
-Tem dias em que eu só quero minha casa. E minha casa é você.
-Obrigado por ser meu abrigo, minha paz e meu melhor lugar no mundo.
-Eu te amo 🤍
-</p>
-</div>
-
+<section>
+  <h2>Tempo juntos ⏳</h2>
+  <div class="contador" id="contador"></div>
 </section>
 
 <script>
-function verificar(){
-  const s=document.getElementById("senha").value.toLowerCase();
-  if(s.includes("enrolados") && s.includes("princesa e o sapo")){
-    login.style.display="none";
-    videos.style.display="block";
-  }else{
-    erro.innerText="Ainda não é essa a magia ✨";
-  }
+function atualizarContador(){
+  const inicio = new Date("2025-03-27T15:30:00");
+  const agora = new Date();
+  const diff = agora - inicio;
+
+  const dias = Math.floor(diff / (1000*60*60*24));
+  const horas = Math.floor(diff / (1000*60*60)) % 24;
+  const minutos = Math.floor(diff / (1000*60)) % 60;
+  const segundos = Math.floor(diff / 1000) % 60;
+
+  document.getElementById("contador").innerHTML =
+    `${dias} dias, ${horas} horas, ${minutos} minutos e ${segundos} segundos 🤍`;
 }
 
-function entrar(){
-  videos.style.display="none";
-  site.style.display="block";
-}
-
-function atualizar(){
-  const inicio=new Date("2025-03-27T15:30:00");
-  const agora=new Date();
-  let diff=agora-inicio;
-  if(diff<0) diff=0;
-
-  const dias=Math.floor(diff/86400000);
-  const horas=Math.floor(diff/3600000)%24;
-  const minutos=Math.floor(diff/60000)%60;
-  const segundos=Math.floor(diff/1000)%60;
-
-  contador.innerHTML=`${dias} dias, ${horas} horas, ${minutos} minutos e ${segundos} segundos`;
-}
-
-setInterval(atualizar,1000);
-atualizar();
+setInterval(atualizarContador,1000);
+atualizarContador();
 </script>
 
 </body>
-  </html>
+</html>
